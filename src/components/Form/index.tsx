@@ -71,7 +71,7 @@ const StyledForm = styled.div`
 
 export default function Form({setTasks}: {setTasks: React.Dispatch<React.SetStateAction<ITarefa[]>>}) {
     const [title, setTitle] = useState("");
-    const [time, setTime] = useState("00:00");
+    const [time, setTime] = useState("00:00:00");
 
     function addTask(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault();
